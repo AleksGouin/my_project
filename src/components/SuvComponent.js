@@ -17,6 +17,7 @@ class SuvComponent extends React.Component {
   SuvComponent() {
     axios.get('http://localhost:9292/search')
     .then(res => {
+      console.log('1')
       const suv = res.data;
       this.setState({suv});
     });
@@ -29,7 +30,6 @@ class SuvComponent extends React.Component {
     render() {
       return (
         <div>
-          <p>{this.state.message}</p>
             {this.state.suv.map(function(voiture) {
               return <p>{voiture.model}</p>
             })}

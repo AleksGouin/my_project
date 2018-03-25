@@ -1,9 +1,8 @@
 require('normalize.css/normalize.css');
 require('styles/App.css');
 
-import axios from 'axios';
 import React from 'react';
-import Suv from 'SuvComponent'
+import Suv from './SuvComponent';
 
 
 
