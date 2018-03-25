@@ -31,10 +31,7 @@ class SuvComponent extends React.Component {
       return (
         <div>
             {this.state.suv.map(function(voiture) {
-              return <p>{voiture.model}</p>
-            })}
-            {this.state.suv.map(function(voiture) {
-              return <p>{voiture.volume}</p>
+              return <p>{voiture.model} {'a un volume de '} {voiture.volume} {'L'}</p>
             })}
         </div>
       );
